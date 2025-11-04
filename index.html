@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Maximo Scopel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Mi Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="inicio">
+    <div class="presentacion">
+      <h2>Soy <span>Maximo Scopel</span>,</h2>
+      <p>un programador en formación.</p>
+    </div>
+    <div class="foto-perfil">
+      <img src="assets/img/foto1.jpg" alt="Foto de Maximo Scopel">
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      “Soy Maximo Scopel, tengo 20 años y estudio Programación.
+      Me apasiona todo lo relacionado con la tecnología.
+      Además, disfruto mantener un equilibrio entre el estudio y la vida activa.
+      Mi objetivo es seguir aprendiendo y crecer en el mundo de la programación y la innovación.”
+    </p>
+  </section>
+
+  <section id="proyectos" class="proyectos">
+    <h2>Proyectos</h2>
+    <div class="grid-proyectos">
+      <div class="proyecto">
+        <img src="assets/img/image.png" alt="Proyecto 1">
+        <h3>Cafetería Landing Page</h3>
+        <a href="https://github.com/maxiscopel/cafeteria-landing" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="proyecto">
+        <img src="assets/img/unnamed.png" alt="Proyecto 2">
+        <h3>Concesionaria JyS</h3>
+        <a href="https://github.com/maxiscopel/concesionaria_JyS" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="proyecto">
+        <img src="assets/img/pagina-web-personal.png" alt="Proyecto 3">
+        <h3>Mi Sitio Web</h3>
+        <a href="https://github.com/maxiscopel/MisitioWeb" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="proyecto">
+        <img src="assets/img/OIP.webp" alt="Proyecto 4">
+        <h3>Actividad Lombok</h3>
+        <a href="https://github.com/maxiscopel/actv_lombok" target="_blank">Ver en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Maximo Scopel | maxiscopel@gmail.com | 2615001234 (solo WhatsApp)</p>
+  </footer>
+</body>
+</html>

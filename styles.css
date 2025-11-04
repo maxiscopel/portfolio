@@ -1,0 +1,265 @@
+/* ====== FUENTES ====== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@400;600&display=swap');
+
+/* ====== ESTILOS GENERALES ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: url('assets/img/96797701-creative-html-wallpaper-coding-programming-and-technology-concept-double-exposure.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth; /* scroll suave */
+}
+
+/* Fondo sutil: oscurece un poco para mejorar contraste */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+
+/* ====== HEADER ====== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077b6;
+  color: white;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background-color: rgba(0, 119, 182, 0.8); /* azul semitransparente */
+  transition: all 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+}
+
+nav a:hover {
+  background-color: #03045e; /* azul más oscuro */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ====== INICIO ====== */
+.inicio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 10%;
+  background-color: rgba(202, 240, 248, 0.9);
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Presentación: cambio de fuente */
+.presentacion {
+  max-width: 500px;
+  text-align: center;
+}
+
+.presentacion h2, .presentacion p {
+  font-family: 'Merriweather', serif;
+  color: #03045e;
+}
+
+.presentacion span {
+  font-weight: bold;
+}
+
+/* Imagen de perfil ajustada */
+.foto-perfil {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #0077b6;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center 35%; /* subimos la imagen */
+}
+
+/* ====== SOBRE MI ====== */
+.sobre-mi {
+  padding: 60px 10%;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 15px;
+  position: relative;
+  background-image: url('assets/img/fondo-elegante-moderno-gris-claro-ilustracion-colorida-brillante-estilo-inteligente-fondo-elegante_189959-1144.avif'); /* tu imagen de programación */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* texto blanco para contrastar */
+}
+.sobre-mi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* oscurece un poco la imagen */
+  border-radius: 15px;
+  z-index: 0;
+}
+.sobre-mi h2, .sobre-mi p {
+  position: relative;
+  z-index: 1;
+  font-family: 'Merriweather', serif;
+}
+/* ====== PROYECTOS ====== */
+.proyectos {
+  padding: 60px 10%;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 0.95);
+  margin-top: 40px;
+  border-radius: 15px;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.proyecto {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+}
+
+.proyecto img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.proyecto h3 {
+  margin: 10px 0;
+  font-family: 'Merriweather', serif;
+}
+
+.proyecto a {
+  display: inline-block;
+  color: white;
+  background-color: #0077b6;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+.proyecto a:hover {
+  background-color: #03045e;
+}
+
+/* ====== CONTACTO ====== */
+.contacto {
+  background-color: rgba(202, 240, 248, 0.9);
+  padding: 60px 10%;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 15px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Nunito', sans-serif; /* Formulario con fuente bonita */
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  font-family: 'Nunito', sans-serif; /* inputs también */
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+}
+
+button:hover {
+  background-color: #03045e;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .inicio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presentacion {
+    max-width: 100%;
+  }
+
+  .foto-perfil {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
